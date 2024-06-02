@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import neural_network as nn
 
 def read_data():
     data = pd.read_csv('diabetic_data.csv')
@@ -13,3 +14,4 @@ def extract_data(data):
 if __name__ == '__main__':
     data = read_data()
     basic = extract_data(data)
+    nn.startData(basic)
